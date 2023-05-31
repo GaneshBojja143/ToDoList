@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,73 @@
   to {
     transform: rotate(360deg);
   }
+} */
+#root{
+  border: 2px solid black;
+  width: 50%;
+  margin: 10em auto;
+}
+#task-header{
+  text-transform: uppercase;
+  text-align: center;
+}
+#taskbar{
+  width:90%;
+  height: 2em;
+  margin: 0 2.3em;
+  overflow: scroll;
+}
+.to-do-list{
+  padding-left: 1.9em;
+  width: 90%;
+}
+.to-do-list *{
+  list-style-type: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 5px 0;
+}
+.to-do-list li input[type="checkbox"]{
+  width: 15px;
+  height: 15px;
+}
+.to-do-list li:not(:last-child){
+  border-bottom: 2px solid gray;
+}
+.navbar{
+  background-color: #F3FEE8;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 0;
+  border-top: 1px solid black;
+}
+.lookup a:nth-child(2) {
+  border-right: 1px solid black;
+}
+.lookup{
+  width: 100%;
+  margin-left: 1.5em;
+}
+.lookup *{
+  padding: 0 0.5em;
+  text-decoration: none;
+}
+.lookup a{
+  font-size: large;
+}
+.task-type{
+  display: inline-flex;
+  width: -webkit-fill-available;
+  justify-content: space-evenly;
+}
+.task-type *{
+  border: none;
+  background-color: #F3FEE8;
+  cursor: pointer;
+}
+.task-portion{
+  border: none;
+}
+.task-portion:active{
+  border:2px solid black;
 }
